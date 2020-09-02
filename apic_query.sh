@@ -23,4 +23,4 @@ curl -s -k -X GET https://$apic$operation -b /etc/telegraf/$cookiefilename
 curl -s -k -d "<aaaUser name=$user/>" -X POST https://$apic/api/mo/aaaLogout.json -b /etc/telegraf/$cookiefilename > /dev/null
 
 # Remove session cookie
-rm /etc/telegraf/$cookiefilename
+rm -f /etc/telegraf/$cookiefilename
