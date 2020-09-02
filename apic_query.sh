@@ -7,8 +7,8 @@
 # Pipe bash arguments to variables
 apic=$1
 operation=$2
-user=$3
-pass=$4
+user='username'
+pass='password'
 
 # Create random cookie filename to avoid race conditions by multiple, concurrent script executions
 cookiefilename=apic_cookie_$RANDOM
